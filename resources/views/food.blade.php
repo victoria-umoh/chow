@@ -18,15 +18,15 @@
                         @csrf
                         <div class="item">
                             <div class='card' style="background-image: url('/uploads/{{$food->image}}')">
-                            <!-- <div class='card'>
-                                <img src="/uploads/{{$food->image}}" /> -->
-                                <div class="price"><h6>{{$food->price}}</h6></div>
-                                <div class='info'>
-                                <h1 class='title'>{{$food->title}}</h1>
-                                <p class='description'>{{$food->description}}</p>
-                                <div class="main-text-button">
-                                    <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                                </div>
+                                <!-- <div class='card'> -->
+                                    <!-- <img src="/uploads/{{$food->image}}" />  -->
+                                    <div class="price"><h6>{{$food->price}}</h6></div>
+                                    <div class='info'>
+                                        <h1 class='title'>{{$food->title}}</h1>
+                                        <p class='description'>{{$food->description}}</p>
+                                    <div class="main-text-button">
+                                        <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
+                                    </div>
                                 </div>
                             </div>
 

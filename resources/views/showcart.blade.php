@@ -164,7 +164,7 @@
                                         </td>
                                         <td>
                                         <input type="hidden" name="image[]" value="{{$data->image}}">
-                                            <!-- <img src="/uploads/{{$data->image}}" width="50" class="img-fluid" /> -->
+                                            <img src="/uploads/{{$data->image}}" width="50" class="img-fluid" />
                                         </td>
                                         
                                     </tr>
@@ -180,28 +180,28 @@
                             </table>
 
                             <div id="" >
-                                <button type="button" class="btn btn-primary" id="order">Order Now</button>
+                                <button type="button" class="btn btn-primary text-black" id="order">Order Now</button>
                             </div>
 
                             <div id="appear" style="display: none;" class="mt-3">                           
                                 <div>
                                     <label for="name" class="form-label">Name</label>
-                                    <input type="text" name="name" value="" class="form-control" placeholder="Enter your name" />
+                                    <input type="text" name="name" value="" class="form-control" placeholder="Enter your name" required />
                                 </div>
 
                                 <div >
                                     <label for="phone" class="form-label">Phone</label>
-                                    <input type="text" name="phone" value="" class="form-control" placeholder="Enter your phone number" />
+                                    <input type="text" name="phone" value="" class="form-control" placeholder="Enter your phone number" required />
                                 </div>
 
                                 <div >
                                     <label for="address" class="form-label">Address</label>
-                                    <input type="text" name="address" value="" class="form-control" placeholder="Enter your address" />
+                                    <input type="text" name="address" value="" class="form-control" placeholder="Enter your address" required />
                                 </div>
 
                                 <div class="mt-3">
                                     <button class="btn btn-success me-5" id="">Confirm Order</button>
-                                    <button type="button" class="btn btn-danger" id="cancel">Cancel</button>
+                                    <button type="button" class="btn btn-danger text-black" id="cancel">Cancel</button>
                                 </div>
                             </div>
                         </form>

@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-12 align-content-right">
-                    <div class="align-content-right text-light" style="font-size: 10px;"><p style="font-size: 10px;">Design: TemplateMo</p></div>
+                    <div class="align-content-right text-light" style="font-size: 10px;"><p style="font-size: 5px;">Design: TemplateMo</p></div>
                 </div>
             </div>
         </div>

@@ -17,10 +17,14 @@
          
           <div style="position:relative; top:60px; right:-50px;">
               <form action="{{ route('search') }}" method="get" class="mb-3">
-                <input type="text" name="search" class="text-dark" />
-                <input type="submit" value="Search" class="btn btn-primary" />
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" name="search" class="text-dark bg-light form-control" placeholder="search query" />
+                  </div>
+                  <div class="col-md-2"><input type="submit" value="Search" class="btn btn-primary" /></div>
               </form>
-            <div>
+
+            <div class="mt-5">
               <a href="#" class="btn btn-primary">Add New</a>
             </div>
 

@@ -7,17 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <title>Chow - Restaurant</title>
-<!--
-    
-TemplateMo 558 Klassy Cafe
 
-https://templatemo.com/tm-558-klassy-cafe
-
--->
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -63,28 +60,20 @@ https://templatemo.com/tm-558-klassy-cafe
                             <li class="scroll-to-section"><a href="#about">About</a></li>
                             <li class="scroll-to-section"><a href="#menu">Menu</a></li>
                             <li class="scroll-to-section"><a href="#chefs">Chefs</a></li> 
-                            <!-- <li class="submenu">
-                                <a href="javascript:;">Features</a>
-                                <ul>
-                                    <li><a href="#">Features Page 1</a></li>
-                                    <li><a href="#">Features Page 2</a></li>
-                                    <li><a href="#">Features Page 3</a></li>
-                                    <li><a href="#">Features Page 4</a></li>
-                                </ul>
-                            </li> -->
-                            <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
                             <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li>
 
                             <li class="scroll-to-section">
 
                                 <!-- if user is logged in, show them cart -->
                                 @auth 
-                                    <a href="{{ route('showcart', Auth::user()->id) }}"> Cart[{{$count}}]</a>
+                                    <a href="{{ route('showcart', Auth::user()->id) }}">
+                                    <i class="fa-solid fa-cart-shopping"></i><sup>[{{$count}}]<sup>
+                                    </a>
                                 @endauth 
 
                                 <!-- else if user is not logged in show them Cart[0] -->
                                 @guest
-                                  <a href="#cart"> Cart[0] </a> 
+                                  <a href="#cart"> <i class="fa-solid fa-cart-shopping"></i><sup>[0]</sup> </a> 
                                 @endguest
                             </li> 
 
@@ -232,7 +221,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-lg-4 offset-lg-4 text-center">
                     <div class="section-heading">
                         <h6>Chow Week</h6>
-                        <h2>This Week’s Special Meal Offers</h2>
+                        <h2>This Week's Special Meal Offers</h2>
                     </div>
                 </div>
             </div>

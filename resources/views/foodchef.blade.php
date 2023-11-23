@@ -21,7 +21,7 @@
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
-                            <img src="/uploads/{{$data2->image}}" width="300" height="300" alt="Chef #1">
+                            <img src="/uploads/{{$data2->image}}" alt="Chef #1">
                         </div>
                         <div class="down-content">
                             <h4>{{ $data2->name }}</h4>
